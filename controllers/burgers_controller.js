@@ -1,3 +1,11 @@
+const express = require("express");
+
+const router = express.Router();
+
+
+var burgers = require("../models/burgers.js");
+
+
 //Inside the burgers_controller.js file, import the following:
 
 //Express
