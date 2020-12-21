@@ -17,3 +17,4 @@ var burgers = require("../models/burgers.js");
 
 
 
+module.exports = router;

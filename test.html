@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/assets/burger_style.css">
+    <title>Eat da Burger</title>
+</head>
+<body>
+    <div class="container">   
+        {{{ body }}}
+          <img src="public/assets/Best-Burger.jpg" class="img-fluid" alt="Burger Image">
+          <div class="jumbotron">
+            <h1 style="text-align:center;"> Order Your Burger</h1>
+        <section>
+            <input type="text" id="enter-burger" name="burger_name" class="form-control" placeholder="Type your Order...">
+          <!--  <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Select Burger from Menu</option>
+                  <option value="1">Double Cheeseburger</option>
+                  <option value="2">Chicken Zinger</option>
+                  <option value="3">Spicy Veggie Bean Burger</option>
+                </select>-->
+                <button type="button" class="btn btn-warning">Submit</button>
+              </div>
+
+              <div class="row justify-content-around text-center px-3">
+
+                <div class="col-12 col-md-5 wait-container">
+                  <h4>Burgers Ordered </h4>
+                  <ul>
+                    <!--{{#each burgers}}
+                    {{#unless this.devoured}}
+                    {{this.burger_name}}
+                    {{/unless}}
+                    {{/each}}-->
+                  </ul>
+                </div>
+            
+            
+                <div class="col-12 col-md-5 devoured-container">
+                  <h4>Burgers Devoured </h4>
+                  <ul>
+                    <!--{{#each burgers}}
+                    {{#if this.devoured}}
+                    {{this.burger_name}}
+                    {{/if}}
+                    {{/each}}-->
+                  </ul>
+                </div>
+            
+              </div>
+            
+            
+            </div>
+             
+
+    
+</body>
+</html>
+
+
+
+
