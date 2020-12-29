@@ -13,27 +13,29 @@ updateOne()
 
 Export the ORM object in module.exports.
 
-*/
-
-let burgers = {
+let orm = {
     selectAll()    {
+        var queryString = "SELECT * FROM burgers";
       orm.all("burgers", function(res) {
-        cb(res);
+        cb(result);
       });
     },
    
     insertOne() {
+        var queryString = "INSERT INTO burgers (burger_name) VALUES (?)";
       orm.create("burgers", id, burger_name, devoured, function(res) {
-        cb(res);
+        cb(result);
       });
     },
     updateOne() {
+        var queryString = "UPDATE burgers SET devoured = true WHERE id = ?";
       orm.update("burgers", burger_name, devoured, function(res) {
-        cb(res);
+        cb(result);
       });
     }
   };
   
+  */
   
-  module.exports = orm;
 
+  module.exports = orm;
