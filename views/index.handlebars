@@ -1,15 +1,14 @@
-<div class="container">
-  <img src="public/assets/Best-Burger.jpg" class="img-fluid" alt="Burger Image">
+<div class="container" style="background-color: black;">
+  <img src="/assets/Best-Burger.jpg" class="center" alt="Burger Image"/>
   <div class="jumbotron">
     <h1 style="text-align:center;"> Order Your Burger</h1>
   <div class="container">
 	<div class="row">
 		<div class="col-md-12 text-center enter_section">
 			<form action="/burgers/createburger" method="POST">
-				<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
-				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+				<input type="text" class="form-control" name="burger_name" id="enter_text">
+				<button type="submit" class="btn btn-secondary" id="text-enter-button">Submit</button>
 			</form>
-			<p>Enter a burger you want to eat.</p>
 		</div>
 	</div>
 </div>
@@ -17,7 +16,7 @@
   </div>
   <div class="row justify-content-around text-center px-3">
     <div class="col-12 col-md-5 wait-container">
-      <h4>Burgers Ordered </h4>
+      <h4 style="color: green">Burgers Ordered </h4>
       <div class="row">
         {{#each burger_data}}
         {{#unless this.devoured}}
@@ -27,8 +26,8 @@
         </div>
         <div class="col-md-3 text-center">
           <form class="devour-form button-size">
-            <input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
-            <button type="submit" class="btn btn-default">Devour it!</button>
+            <input type="hidden" size="50" class="burger_id" type="text" value={{this.id}}><br>
+            <button type="submit" class="btn btn-secondary" id="text-enter-button">Devour it!</button>
           </form>
         </div>
         {{/unless}}
@@ -36,7 +35,7 @@
       </div>
     </div>
     <div class="col-12 col-md-5 devoured-container">
-      <h4>Burgers Devoured </h4>
+      <h4 style="color: green">Burgers Devoured </h4>
       <div class="row">
         {{#each burger_data}}
         {{#if this.devoured}}
