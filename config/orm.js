@@ -22,11 +22,16 @@ let orm = {
       cb(result);
     });
   },
-  updateOne() {
-    var queryString = "UPDATE burgers SET devoured = true WHERE id = ?";
-    orm.update("burgers", burger_name, devoured, function (res) {
+  updateOne(cb, burger_id) {
+    var queryString = `UPDATE burgers SET devoured = true WHERE id = ${burger_id}`;
+    connection.query(queryString, function (error, result) {
+      if (error) {
+        throw error;
+      }
       cb(result);
     });
+    
+  
   },
 };
 

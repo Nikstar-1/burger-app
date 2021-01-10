@@ -9,6 +9,10 @@ var burger = {
     createBurger: function(cb, burger_name){
         console.log(burger_name)
         orm.insertOne(cb, burger_name)
+    },
+    updateBurger: function(cb, burger_id){
+        console.log(burger_id); 
+        orm.updateOne(cb, burger_id)
     }
 }
 

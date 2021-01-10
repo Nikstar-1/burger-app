@@ -20,6 +20,13 @@ router.post("/burgers/createburger", function (req, res){
     }, req.body.burger_name);
 })
 
+router.put("/burgers/devourburger/:id", function(req, res){
+    console.log("Into the controller")
+    burgers.updateBurger(function(result){
+        res.sendStatus(200)
+    }, req.params.id)
+})
+
 
 
 module.exports = router;
