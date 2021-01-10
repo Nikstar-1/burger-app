@@ -12,9 +12,13 @@ let orm = {
     });
   },
 
-  insertOne() {
-    var queryString = "INSERT INTO burgers (burger_name) VALUES (?)";
-    orm.create("burgers", id, burger_name, devoured, function (res) {
+  insertOne(cb, burger_name) { 
+    var devouredStatus = false;
+    var queryString = `INSERT INTO burgers (burger_name, devoured) VALUES ('${burger_name}', ${devouredStatus})`;
+    connection.query(queryString, function (error, result) {
+      if (error) {
+        throw error;
+      }
       cb(result);
     });
   },
