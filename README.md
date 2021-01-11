@@ -15,9 +15,9 @@ This app will store every burger in a database, whether devoured or not.
 
 ## Screenshots
 
-!["Start Page"](... "Start page.")
+!["Start Page"](public/assets/burger1.png "Start page.")
 
-!["Start Page"](... "Start page.")
+!["Start Page"](public/assets/burger2.png "Start page.")
 
 ## Installation
 To run the application locally, first clone this repository with the following command.
