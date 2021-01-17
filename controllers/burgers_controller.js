@@ -27,6 +27,12 @@ router.put("/burgers/devourburger/:id", function(req, res){
     }, req.params.id)
 })
 
+/*router.post("/deleteOne/:id", function(req, res){
+    const state = "id = " + req.params.id;
+    burger.deleteOne(state, function(){
+        res.redirect("/")
+    })
+})
 
-
+*/
 module.exports = router;
