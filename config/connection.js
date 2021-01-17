@@ -9,7 +9,7 @@ let connection;
       host: "localhost",
       user: "root",
       password: "development",
-      database: "burger_db"
+      database: "burgers_db"
     })
   }
    

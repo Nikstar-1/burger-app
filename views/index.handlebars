@@ -45,6 +45,11 @@
         </div>
         {{/if}}
         {{/each}}
+         <form action ="/deleteOne/{{this.id}}" method="POST">
+              <button type="submit" class="btn devourBtn btn-primary">Delete</button>
+             </form>
+             {{/if}}
+             {{/each}}
       </div>
     </div>
   </div>

@@ -13,9 +13,14 @@ var burger = {
     updateBurger: function(cb, burger_id){
         console.log(burger_id); 
         orm.updateOne(cb, burger_id)
+    },
+    deleteOne: function(id, callback) {
+        orm.deleteOne(id, function(res) {
+            callback(res);
+        });
     }
-}
-
+};
+    
 
 
 
