@@ -33,6 +33,9 @@ Finally, run the node server locally.
 node server
 Now, open the local application on port 3000 at the URL: http://localhost:3000/.
 
+Below is my Heroku link for direct access:
+https://still-atoll-89134.herokuapp.com/burgers
+
 Enjoy and have a burger!
 
 
