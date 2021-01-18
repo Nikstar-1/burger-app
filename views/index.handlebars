@@ -46,10 +46,17 @@
         {{/if}}
         {{/each}}
          <form action ="/deleteOne/{{this.id}}" method="POST">
-              <button type="submit" class="btn devourBtn btn-primary">Delete</button>
+              <button type="submit" class="btn btn-secondary" id="text-enter-button">Delete</button>
              </form>
-             {{/if}}
-             {{/each}}
+             <h2>Burgers that are deleted!</h2>
+
+             <ul>
+               {{#each burgers}}
+               {{#if this.devoured}}
+               {{> burger-block devoured=false}}
+               {{/if}}
+               {{/each}}
+             </ul>
       </div>
     </div>
   </div>
